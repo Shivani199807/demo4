@@ -1,104 +1,161 @@
 *{margin:0;
-padding:0;
-box-sizing: border-box;}
-
-.navcontent{font-size: 0.5cm;
-}
- .navcontent a{margin:0px 8px;
-}
-
-.navparttwo{background-color: rgb(35, 35, 160);
-min-height: 50px;}
-
-.navbar-nav .a{font-weight:1020;}
-
-.mainpic{background-image: url("../images/22_banner_career.jpg");
+    padding:0;
+    box-sizing: border-box;}
     
-    background-repeat: no-repeat;
-    background-size:cover;
-    
-    min-height: 300px;
-    max-width: 100%;
-    background-position:center;}
-    
-
-.textmain{font-size: 1.2cm;}
-
-.first{padding-top:60px;}
-
-.first-part p{font-size: 0.5cm;
-     font-weight: 360; 
-    line-height: 0.6cm;
-    color:rgb(107, 104, 104);
+    .navcontent{font-size: 0.5cm;
     }
-
-.second-part{padding-top:30px;} 
-.thirdhead{padding-top:30px;}   
-
-.third-part{padding-top:30px;}
-
-.third-part p{ font-size: 0.5cm;
-     font-weight: 300; 
-    line-height: 0.6cm;
-    color:rgb(107, 104, 104);}
-
-.third-part h5{color:rgb(70, 68, 68);}  
-
-.fourth-part{padding-top:30px;}
-
-.fourth-part p{font-size: 0.5cm;
-    font-weight: 300; 
-   line-height: 0.6cm;
-   color:rgb(107, 104, 104);}
-
-.fourth-part h5{color:rgb(70, 68, 68);}   
-
-.fifth-part {padding:50px 0px;
-}
-.fifth-part .btn{background-color:rgb(12, 12, 145);
-color:white;}
-.fifth-part a{font-weight: 900;}
-
-
-.footer{padding-top:60px;
-
-border-top:solid rgb(12, 12, 145);
-border-top-width: 0.3cm;}
-
-.part-one a{font-size: 0.4cm;
-    color:grey;}
-
-.part-one-bor{border-right:solid;
-border-right-color:grey;
-border-right-width: 1px; }
-
-.part-two{padding:20px;}
-
-.part-two a{color:black;
-font-size:0.3cm;
-margin-right:4px;
-
-}
-
-.part-two p{color:black;
-font-size:0.3cm}
-
-
-.image{max-width:100%;
-height:auto;}
-
-
-@media (max-width:995px) and (min-width:775px){
-    .navbar-toggler{display:none;}
-}
-
-@media(max-width:775px){
-    .abc{display:none;}
-    .navparttwo{display:none;}
+     .navcontent a{margin:0px 8px;
+    }
     
-}
+    .navparttwo{background-color: rgb(35, 35, 160);
+    min-height: 50px;}
+    
+    .navbar-nav .a{font-weight:1020;}
+    
+    .mainpic{background-image: url("../images/22_banner_career.jpg");
+        
+        background-repeat: no-repeat;
+        background-size:cover;
+        
+        min-height: 300px;
+        max-width: 100%;
+        background-position:center;}
+        
+    
+    .textmain{font-size: 1.2cm;}
+    
+    .first{padding-top:30px;}
+    
+    .first-part p{font-size: 0.5cm;
+         font-weight: 360; 
+        line-height: 0.6cm;
+        color:rgb(107, 104, 104);
+        width:100%;
+        height:70%;
+        
+        
+        }
+    .first-part{
+    background-color: rgb(251, 251, 253);}    
+    
+    .second-part{padding-top:30px;} 
+    .second-part .imag{box-shadow: 0px 0px 7px rgb(48, 46, 46);}
+    .thirdhead{padding-top:30px;}   
+    
+    .third-part{padding-top:30px;}
+    
+    .third-part p{ font-size: 0.5cm;
+         font-weight: 300; 
+        line-height: 0.6cm;
+        color:rgb(107, 104, 104);}
+    
+    .third-part h5{color:black;
+        text-shadow: 0px 0px 3px rgb(161, 154, 154), 0px 0px 5px blue;}  
+
+    .third-part .imag{box-shadow: 0px 0px 7px rgb(48, 46, 46); }    
+    
+    .fourth-part{padding-top:30px;}
+    
+    .fourth-part p{font-size: 0.5cm;
+        font-weight: 300; 
+       line-height: 0.6cm;
+       color:rgb(107, 104, 104);}
+    
+    .fourth-part h5{color:black;
+        text-shadow: 0px 0px 3px rgb(161, 154, 154), 0px 0px 5px blue;
+    }   
+    
+    .fifth-part {padding:50px 0px;
+    }
+    .fifth-part .btn{background-color:rgb(12, 12, 145);
+    color:white;}
+    .fifth-part a{font-weight: 900;}
+    
+    
+    .footer{padding-top:60px;
+    
+    border-top:solid rgb(12, 12, 145);
+    border-top-width: 0.3cm;}
+    
+    .part-one a{font-size: 0.4cm;
+        color:grey;}
+    
+    .part-one-bor{border-right:solid;
+    border-right-color:grey;
+    border-right-width: 1px; }
+    
+    .part-two{padding:20px;}
+    
+    .part-two a{color:black;
+    font-size:0.3cm;
+    margin-right:4px;
+    
+    }
+    
+    .part-two p{color:black;
+    font-size:0.3cm}
+    
+    
+    .imag{max-width:100%;
+    height:auto;}
+    
+    
+    @media (max-width:995px) and (min-width:775px){
+        .navbar-toggler{display:none;}
+    }
+    
+    @media(max-width:775px){
+        .abc{display:none;}
+        .navparttwo{display:none;}
+        
+    }
+    
+    
+     @media(max-width:768px){
+        .part-one-bor{border-right:0px;}
+    } 
 
 
- @media(max-width:768px){
-    .part-one-bor{border-right:0px;}
-} 
+
+
+ .animated {
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: 4;
+  } 
+
+
+
+   @keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  }
+  .pulse {
+    animation-name: pulse;
+    animation-duration: 5s;
+  } 
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+
+  .fifth-part a:hover{background-color: white;
+color:black;
+border:black solid;}
+
+
+
+.second-part{padding-top: 30px;}
+
+
+
+
+ 
+
+
+  
