@@ -50,7 +50,7 @@
         color:rgb(107, 104, 104);}
     
     .third-part h5{color:black;
-        text-shadow: 0px 0px 3px rgb(161, 154, 154), 0px 0px 5px blue;}  
+        text-shadow: 2px 2px 3px rgb(161, 154, 154)}  
 
     .third-part .imag{box-shadow: 0px 0px 7px rgb(48, 46, 46); }    
     
@@ -62,7 +62,7 @@
        color:rgb(107, 104, 104);}
     
     .fourth-part h5{color:black;
-        text-shadow: 0px 0px 3px rgb(161, 154, 154), 0px 0px 5px blue;
+        text-shadow: 2px 2px 3px rgb(161, 154, 154);
     }   
     
     .fifth-part {padding:50px 0px;
