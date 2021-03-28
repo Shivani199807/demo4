@@ -62,7 +62,7 @@
        color:rgb(107, 104, 104);}
     
     .fourth-part h5{color:black;
-        text-shadow: 2px 2px 3px rgb(161, 154, 154);
+        text-shadow: 2px 2px 3px rgb(161, 154, 154)
     }   
     
     .fifth-part {padding:50px 0px;
@@ -121,7 +121,7 @@
  .animated {
     animation-duration: 2.5s;
     animation-fill-mode: both;
-    animation-iteration-count: 10;
+    animation-iteration-count: 4;
   } 
 
 
@@ -184,6 +184,7 @@ border:black solid;}
 
 
  
+
 
 
   
