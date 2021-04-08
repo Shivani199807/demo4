@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <title>Registration Form</title>
 </head>
 
@@ -30,13 +30,20 @@
                         <h1>facebook</h1>
 
                     </div>
-                    <div class="col-md-4 sidenav">
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form>
-
-                    </div>
+                    <!-- <div class="col-md-4  sidenav"> -->
+                            
+                        <form class="col-md-4 d-flex sidenav">
+                            <!-- <div class="col-md-6"> -->
+                              <label for="inputEmail4" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="inputEmail4">
+                            <!-- </div>
+                            <div class="col-md-6"> -->
+                              <label for="inputPassword4" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="inputPassword4">
+                            <!-- </div> -->
+                        </form>    
+                         
+                    <!-- </div> -->
 
                 </div>
 
@@ -48,6 +55,7 @@
 
 
     <div class="container">
+
         <div class="topheading">
             <h2>Create a new account</h2>
             <p>It's quick and easy</p>
@@ -61,9 +69,64 @@
 
                 var fname = document.myform.fname.value;
                 var lname = document.myform.lname.value;
-                var email = document.myform.email.value;
+                var email = document.getElementById('txtEmail');
                 var password = document.myform.password.value;
                 var radios = document.getElementsByName("yesno");
+                var mailFormat = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})|([0-9]{10})+$/;
+                
+                
+
+                 if (fname.length < 1) {
+                    document.getElementById("nameloc").innerHTML =
+                        " What's Your Name";
+                    fname.className='error';    
+                    display = false;
+                } else {
+                    document.getElementById("nameloc").innerHTML = "";
+                    display = true;
+                } 
+
+
+                 if (lname.length < 1) {
+                    document.getElementById("lloc").innerHTML =
+                        " What's Your Last name";
+                    display = false;
+
+                } else {
+                    document.getElementById("lloc").innerHTML = "";
+                    display = true;
+                }
+                 
+
+                
+                if (email.value == "") {
+                    alert( "  Please enter your Email or Phone Number  ");
+                }
+                else if (!mailFormat.test(email.value)) {
+                    alert( "  Email Address / Phone number is not valid, Please provide a valid Email or phone number ");
+                    return false;
+                }
+                else {
+                    alert(" Success ");
+                }
+
+                
+
+                 if (password.length < 1) {
+                    document.getElementById("pass").innerHTML =
+                        "Fill the password ";
+                    display = false;
+
+                } 
+                else if((password.length<4)||(password.length>8)){
+                    document.getElementById("pass").innerHTML="Fill the correct password"
+                    display=false;
+
+                }
+                else {
+                    document.getElementById("pass").innerHTML = "";
+                    display = true;
+                }
 
                 var display = false;
                 var i = 0;
@@ -78,45 +141,34 @@
                     return display;
                 }
 
-                if (fname.length < 1) {
-                    document.getElementById("nameloc").innerHTML =
-                        " What's Your Name";
-                    display = false;
-                } else {
-                    document.getElementById("nameloc").innerHTML = "";
-                    display = true;
-                }
 
-                if (lname.length < 1) {
-                    document.getElementById("lloc").innerHTML =
-                        " What's Your Last name";
-                    display = false;
+                
 
-                } else {
-                    document.getElementById("lloc").innerHTML = "";
-                    display = true;
-                }
 
-                if (email.length < 1) {
-                    document.getElementById("emnames").innerHTML =
-                        " Fill the  email id or Phone no.";
-                    display = false;
+               
 
-                } else {
-                    document.getElementById("emnames").innerHTML = "";
-                    display = true;
-                }
+
+               
+
+
+
                 if (password.length < 1) {
                     document.getElementById("pass").innerHTML =
                         "Fill the password ";
                     display = false;
 
-                } else {
+                } 
+                else if((password.length<4)||(password.length>8)){
+                    document.getElementById("pass").innerHTML="Fill the correct password"
+                    display=false;
+
+                }
+                else {
                     document.getElementById("pass").innerHTML = "";
                     display = true;
                 }
 
-
+                
             }
         </script>
         <style>
@@ -127,46 +179,38 @@
             }
         </style>
 
-        <form id="form" class="form row " name="myform" action="#" onsubmit="return formvalidate()">
+        <form id="form" class="form row " name="myform" action="top.html" onsubmit="return formvalidate()">
 
-            <div class="col-md-6 control error">
-
+            <div class="col-md-6  ">
                 <input type="text" class="form-control f-name" id="firstname" name="fname" placeholder="First Name" />
-
-
-
             </div>
 
-            <div class="col-md-6 control error">
+            <div class="col-md-6 ">
                 <input type="text" class="form-control" id="lastname" name="lname" placeholder="Last Name" />
-                <i class="fas fa-exclamation-circle "></i>
+               
+            </div>
 
+             
+
+            <div class="col-md-12 mt-3 ">
+                <input type="text" class="form-control" id="txtEmail" name="email" placeholder="Mobile number or email address" />
+               
 
             </div>
-            <span id="emnames" style="color: #E94435; font-size: 10px;"></span>
 
-            <div class="col-md-12 mt-3 control error">
-                <input type="text" class="form-control" id="email" name="email" placeholder="Mobile number or email address" />
-                <i class="fas fa-exclamation-circle "></i>
-
-
-            </div>
             <span id="pass" style="color: #E94435; font-size: 10px;"></span>
-            <div class="col-md-12 mt-3 control error">
+
+            <div class="col-md-12 mt-3 ">
                 <input type="password" class="form-control" id="password" name='password' placeholder="New password" />
-                <i class="fas fa-exclamation-circle "></i>
-
-
+               
             </div>
 
-
-
-            <div class="col-md-12 mt-3 control ">
+            <div class="col-md-12 mt-3  ">
 
                 <label for="dateofbirth" class="form-label">Date of Birth</label><br>
 
 
-                <select id="dateofbirth" class="form-select error">
+                <select id="dateofbirth" class="form-select">
                     <option selected>7</option>
                     <option>1</option>
                     <option>2</option>
@@ -174,12 +218,10 @@
                     <option>4</option>
                 </select>
 
-
                 <select id="dateofbirth" class="form-select">
                     <option selected>Apr</option>
                     <option>January</option>
                 </select>
-
 
                 <select id="dateofbirth" class="form-select">
                     <option selected>2021</option>
@@ -188,8 +230,7 @@
 
             </div>
 
-
-            <div class="col-md-12 mt-3 control error">
+            <div class="col-md-12 mt-3 ">
                 <label for="gender" class="form-label">Gender</label><br>
 
 
@@ -199,8 +240,6 @@
                         Male
                     </label>
                 </div>
-
-
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="yesno" id="femalegender">
                     <label class="form-check-label " for="femalegender">
@@ -219,16 +258,13 @@
 
             <p class="mt-3 paracontrol col-md-12">By clicking Sign Up, you agree to our Terms, Data Policy and
                 Cookie Policy. You may receive SMS notifications from us and can opt out at any time.</p>
-
-
-
             <input type="submit" class="btn buttoncontrol col-md-6 " name="submit" value="Sign Up">
 
         </form>
     </div>
 
 
-
+     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
