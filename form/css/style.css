@@ -3,26 +3,36 @@
     box-sizing: border-box;}
     
     body{ background-color:#ebedf0;}
-    
-    .mainheader{height:80px;
-    background-color: #133783;
-    /* padding: 0px 70px;
-    padding-top: 20px; */
-    
-    min-width:100%;
+
+    .mainhead{display: flex;
+        justify-content:space-between ;
+        align-items: center;
+        background-color:  #133783;
+        max-width: 100%;
+        height:15vh;
+        padding:20px;
+        
     }
+    .subparts h1{color: white;}
+    .subparts .bts{background-color:blue;
+    color:white}
+    
+   
     .cols-md-12{padding-left: 0px;}
-    .heads h1{ color:white;}
-    .tops{display: flex;
-    flex-direction: row;}
+    
     
     .container {
-        padding-top: 30px;
-        position:relative;
+         padding-top: 30px; 
+
+        
+        /* position:relative; */
         width: 400px;
          max-width: 100%; 
     
     }
+
+    .pqr{display: flex;}
+    .abc btn{color: #133783;}
     
     .topheading h2{font-size: 1.0cm;
     font-weight: 600;}
