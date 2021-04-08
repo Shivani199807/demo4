@@ -12,55 +12,39 @@
 </head>
 
 <body>
-    <style>
-        @media (max-width:920px) {
-            .sidenav {
-                display: none;
-            }
+      
 
-        }
-    </style>
+    
+        <div class="mainhead">
+            <div class="subparts">
+           <h1>facebook</h1></div>
 
-    <header>
-        <div class="mainheader">
-            <div class="container" style="width: 100%;">
-                <div class="row">
-                    <div class="col-md-8 heads">
+           <div class="hello  d-flex">
+           <label for="inputEmail4" class="form-label lmn">Email</label>
+           <input type="email input-sm" class="form-control lmn" id="inputEmail4">
+        
+           
+           <label for="inputPassword4" class="form-label lmn">Password</label>
+           <input type="password" class="form-control lmn" id="inputPassword4">
 
-                        <h1>facebook</h1>
+           <button class="bts lmn">Login</button>
+       
+           </div>
 
-                    </div>
-                    <!-- <div class="col-md-4  sidenav"> -->
-                            
-                        <form class="col-md-4 d-flex sidenav">
-                            <!-- <div class="col-md-6"> -->
-                              <label for="inputEmail4" class="form-label">Email</label>
-                              <input type="email" class="form-control" id="inputEmail4">
-                            <!-- </div>
-                            <div class="col-md-6"> -->
-                              <label for="inputPassword4" class="form-label">Password</label>
-                              <input type="password" class="form-control" id="inputPassword4">
-                            <!-- </div> -->
-                        </form>    
-                         
-                    <!-- </div> -->
-
-                </div>
-
-            </div>
+       </div>
+       
 
 
-        </div>
-    </header>
 
 
+        
     <div class="container">
 
         <div class="topheading">
             <h2>Create a new account</h2>
             <p>It's quick and easy</p>
-            <span id="nameloc" style="color: #E94435; font-size: 10px;"></span>
-            <span id="lloc" style="color: #E94435; font-size: 10px;"></span>
+            <span id="nameloc" style="color: #E94435; font-size: 15px; "></span>
+            <span id="lloc" style="color: #E94435; font-size: 15px;"></span>
 
 
         </div>
@@ -78,7 +62,7 @@
 
                  if (fname.length < 1) {
                     document.getElementById("nameloc").innerHTML =
-                        " What's Your Name";
+                        " What's Your Name &nbsp &nbsp &nbsp";
                     fname.className='error';    
                     display = false;
                 } else {
@@ -161,8 +145,10 @@
                 .f-name{
                     margin-bottom: 20px;
                 }
+                .lmn{display: none;}
+                
             }
-        </style>
+        </style> 
 
         <form id="form" class="form row " name="myform" action="top.html" onsubmit="return formvalidate()">
 
@@ -183,7 +169,7 @@
 
             </div>
 
-            <span id="pass" style="color: #E94435; font-size: 10px;"></span>
+            <span id="pass" style="color: #E94435; font-size: 15px;"></span>
 
             <div class="col-md-12 mt-3 ">
                 <input type="password" class="form-control" id="password" name='password' placeholder="New password" />
@@ -200,17 +186,21 @@
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
-                    <option>4</option>
+                    <option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option>
                 </select>
 
                 <select id="dateofbirth" class="form-select">
                     <option selected>Apr</option>
-                    <option>January</option>
+                    <option>January</option><option>Feburary</option><option>March</option><option>April</option><option>May</option>
+                    <option>June</option><option>July</option><option>August</option><option>September</option><option>October</option>
+                    <option>November</option><option>December</option>
                 </select>
 
                 <select id="dateofbirth" class="form-select">
                     <option selected>2021</option>
-                    <option>2020</option>
+                    <option>2020</option><option>2019</option><option>2018</option><option>2017</option><option>2016</option>
+                    <option>2015</option><option>2014</option><option>2013</option><option>2012</option><option>2011</option>
+                    <option>2010</option><option>2009</option><option>2008</option><option>2007</option><option>2006</option>
                 </select>
 
             </div>
