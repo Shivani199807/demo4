@@ -1,0 +1,66 @@
+*{margin: 0px;
+padding: 0px;
+box-sizing: border-box;}
+
+body{ background-color:#ebedf0;}
+
+.mainheader{height:80px;
+background-color: blue;
+/* padding: 0px 70px;
+padding-top: 20px; */
+
+min-width:100%;
+}
+.cols-md-12{padding-left: 0px;}
+.heads h1{ color:white;}
+.tops{display: flex;
+flex-direction: row;}
+
+.container {
+    position:relative;
+    width: 400px;
+     max-width: 100%; 
+
+}
+
+.topheading h2{font-size: 1.0cm;
+font-weight: 600;}
+
+.topheading p{font-size: 0.6cm;
+color:grey;}
+
+.paracontrol{font-size: 0.2cm;}
+
+
+.buttoncontrol{width:70%;
+background-color: green;
+color:white;
+font-weight: 700;
+}
+.hidden{display: none;}
+
+  .control i{position: absolute;
+top: 10px;
+right:20px;} 
+.btn i{position:absolute;
+top:30px;
+right:180px;
+width:100%;}
+
+ .btntry i{position:absolute;
+    top:39px;
+    right:0px;
+left:70px;}  
+
+  /* .control  small{position: absolute;
+top: 35px;
+right:500px;}      */
+
+  /* .control 
+ input {border-color: #e74c3c;
+	
+}  */
+
+  /* .error{visibility: visible;
+color:#e74c3c;
+}   */
